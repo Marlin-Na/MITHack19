@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>提交病历信息</title>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CureFind</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">开始</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">关于我们</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-sm-8">
+                <h3>提交您的病历信息:</h3>
+
+                <form id="profile-form" onSubmit="return form_on_submit()" action="result.html" method="get">
+
+                    <input type="hidden" class="form-text" id="inputHiddenURLParam"
+                           name="keyWords" value="">
+
+                    <div class="row form-group">
+                        <div class="col">
+                            <label for="inputLastName">姓氏</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="inputLastName"
+                                placeholder=""
+                            >
+                        </div>
+                        <div class="col">
+                            <label for="inputFirstName">名字</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="inputFirstName"
+                                placeholder=""
+                            >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputContact">联系方式</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputContact"
+                            placeholder="xxx-xxxx-xxxx"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="inputKeyWords">疾病关键字</label>
+                        <input
+                            id="inputKeyWords"
+                            class="form-control"
+                            type="text"
+                            placeholder="如，乳腺癌"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="inputRecords">电子病历文件</label>
+                        <input type="file" class="form-text" id="inputRecords">
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="checkbox" class="form-check-input" id="inputConsent">
+                        <label for="inputConsent" class="form-check-labej">
+                            我同意CureFind<a href="#">隐私保护政策</a>和<a href="#">服务协议</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">提交</button>
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <h3> <small class="text-muted">帮助</small> </h3>
+                <ul>
+                    <li>
+                        CureFind 可以帮助您找到最适合您的第三期和第四期临床实验。
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="/js/form.js"></script>
+</body>
+
+</html>
