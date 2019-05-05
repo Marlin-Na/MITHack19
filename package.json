@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx parcel build form.html result.html",
-    "watch": "npx parcel watch form.html result.html"
+    "build": "npx parcel build index.html form.html result.html",
+    "watch": "npx parcel watch index.html form.html result.html"
   },
   "author": "",
   "license": "ISC",
